@@ -1,3 +1,8 @@
+//정규표현식 배움, 문제 풀 때 주석 잘 적기
+//Map 사용 ( Map.set 과 Map.get의 사용법 )
+//slice,filter는 원본을 바꾸지않는 메소드
+//toString()과 parseInt()의 진법 변환 기능
+
 // 신고 결과 받기 - 프로그래머스
 
 function solution(id_list, report, k) {
