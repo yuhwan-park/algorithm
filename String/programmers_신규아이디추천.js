@@ -27,4 +27,3 @@ function solution(new_id) {
   }
   return step7;
 }
-
