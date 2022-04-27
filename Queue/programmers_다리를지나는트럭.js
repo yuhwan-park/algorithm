@@ -1,11 +1,11 @@
 // https://programmers.co.kr/learn/courses/30/lessons/42583
 
-//
+// 풀이
 
 function solution(bridge_length, weight, truck_weights) {
   let answer = 0;
   const trucks = truck_weights.length; // 원래의 트럭 수 저장
-  const bridge = Array(bridge_length).fill(false); // 다리 배열 생성(큐)
+  const bridge = Array(bridge_length).fill(false); // 다리 배열 생성
   const passed = []; // 지나 온 트럭 배열
   while (passed.length !== trucks) {
     answer++;
