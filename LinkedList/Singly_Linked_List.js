@@ -95,8 +95,32 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === 0) return this.shift();
+    if (index === this.length - 1) return this.pop();
+    let prev = this.get(index - 1);
+    let removeItem = prev.next;
+    prev.next = removeItem.next;
+    this.length--;
+    return removeItem;
+  }
+  reverse() {
+    let node = this.head;
+    this.head = this.tail;
+    this.tail = node;
+    let next;
+    let prev = null;
+    for (let i = 0; i < this.length; i++) {
+      next = node.next;
+      node.next = prev;
+      prev = node;
+      node = next;
+    }
+    return this;
+  }
 }
-// 1 2 4 5
+// 1 2 3  4 5
 let list = new SinglyLinkedList();
 list.push("1");
 list.push("2");

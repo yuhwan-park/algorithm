@@ -135,7 +135,7 @@ function mergeSort(arr) {
 그 후에 분할된 배열의 원소를 하나하나 정렬하며 반환한다.
 
 - 합병 정렬의 Big O
-  <img src='./assets/mergeBigO.png'>
+  <img src='./assets/mergeBigO.PNG'>
   분할 하는데 log2(n)의 시간이 걸리고 합병하는데 모든 원소를 한번씩 참조하면서 비교해야 하니 n의 시간이 걸린다. 합치면 O(n log n)의 시간이 걸린다. 공간 복잡도는 입력된 배열의 길이만큼 배열을 만들어내서 O(n)이다.
 
 <hr>
