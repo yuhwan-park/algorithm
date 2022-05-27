@@ -12,4 +12,3 @@ let [doc, target] = fs.readFileSync(filePath).toString().trim().split("\n");
 const result = doc.matchAll(target);
 
 console.log([...result].length);
-console.log();
