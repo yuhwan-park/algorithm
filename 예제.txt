@@ -1,3 +1,16 @@
-2
-<<BP<A>>Cd-
-Th--Is<IsS<3-C>>r3t
+15
+push 1
+push 2
+front
+back
+size
+empty
+pop
+pop
+pop
+size
+empty
+pop
+push 3
+empty
+front
